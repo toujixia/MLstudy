@@ -26,8 +26,14 @@
 
    A：最小二乘法，平方均值损失函数，均方误差
 
-   公式：$$Loss = \frac{1}{m}\sum^m_{i=1}(\hat y - y)^2$$
+   公式：$$Loss = \frac{1}{2m}\sum^m_{i=1}(\hat y - y)^2$$
 
 7. Q：线性回归的损失函数有哪些假设？
 
    A：样本独立，随机变量，正太分布
+
+8. Q：Loss Function的导函数？
+
+   A：$$\frac {\partial J}{\partial W} = \frac {1}{m}X(W^TX + b - Y)^T$$
+
+   ​		$$\frac {\partial J}{\partial b} = \frac {1}{m} \sum (W^TX + b - Y)$$
